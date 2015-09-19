@@ -355,6 +355,12 @@ a:hover {
   width: 300px;
 }
 
+@media (min-width: 768px) {
+  .contactus input[type="text"], .contactus input[type="button"], .contactus textarea {
+    width: 450px;
+  }
+}
+
 
 .footer {
   background-color: #121519;
