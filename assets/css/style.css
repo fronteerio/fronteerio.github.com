@@ -1,15 +1,5 @@
 @font-face {
     font-family: "Clear Sans";
-    src: url("../fonts/clearsans/clearsans-light.eot");
-    src: url("../fonts/clearsans/clearsans-light.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/clearsans/clearsans-light.svg#clear_sans_lightregular") format("svg"),
-         url("../fonts/clearsans/clearsans-light.woff") format("woff");
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Clear Sans";
     src: url("../fonts/clearsans/clearsans-thin.eot");
     src: url("../fonts/clearsans/clearsans-thin.eot?#iefix") format("embedded-opentype"),
          url("../fonts/clearsans/clearsans-thin.svg#clear_sans_lightregular") format("svg"),
