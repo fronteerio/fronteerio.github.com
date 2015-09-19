@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "Clear Sans";
+    src: url("../fonts/clearsans/clearsans-light.eot");
+    src: url("../fonts/clearsans/clearsans-light.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/clearsans/clearsans-light.svg#clear_sans_lightregular") format("svg"),
+         url("../fonts/clearsans/clearsans-light.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("../fonts/clearsans/clearsans-thin.eot");
+    src: url("../fonts/clearsans/clearsans-thin.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/clearsans/clearsans-thin.svg#clear_sans_lightregular") format("svg"),
+         url("../fonts/clearsans/clearsans-thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("../fonts/clearsans/clearsans-regular.eot");
+    src: url("../fonts/clearsans/clearsans-regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/clearsans/clearsans-regular.svg#clear_sansregular") format("svg"),
+         url("../fonts/clearsans/clearsans-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("../fonts/clearsans/clearsans-bold.eot");
+    src: url("../fonts/clearsans/clearsans-bold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/clearsans/clearsans-bold.svg#clear_sansbold") format("svg"),
+         url("../fonts/clearsans/clearsans-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #191F25;
+  font-family: "Clear Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body {
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .row.navigation > div {
+    float: right;
+  }
+}
+
+h1 {
+  font-variant: small-caps;
+  margin-top: 10px;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.row.navigation ul {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.row.navigation ul li {
+  margin: 15px;
+  padding-bottom: 10px;
+}
+
+.row.navigation ul > li  {
+  border-bottom: 5px solid #181E23;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.row.navigation ul li:hover {
+  border-bottom: 5px solid #2B3838;
+}
+
+.row.navigation ul li a {
+  color: #fff;
+}
+
+
+
+.row.logo {
+  margin-top: 30px;
+}
+
+.row.logo img {
+  height: 250px;
+}
+
+.row.logo h2, .row.logo p {
+  text-align: left;
+}
+
+.row.logo h2 {
+  color: #919C9D;
+  word-spacing: 2000px;
+}
+
+.row.logo p {
+  color: #879092;
+  margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .row.logo > div {
+    text-align: right;
+  }
+
+  .row.navigation ul {
+    text-align: left;
+  }
+
+  .row.logo img {
+    height: 550px;
+    margin-right: -120px;
+  }
+
+  .row.logo h2 {
+    font-size: 38px;
+    margin-top: 215px;
+    width: 230px;
+  }
+
+  .row.logo p {
+    width: 300px;
+  }
+}
+
+
+.ourwork {
+  background-color: #E8ECEB;
+  background-image: url('../images/top-arch.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #748787;
+  margin-top: 40px;
+  padding-top: 75px;
+}
+
+.ourwork h3 {
+  color: #727677;
+  margin-bottom: 30px;
+}
+
+.ourwork ul {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ourwork li img {
+  margin: 30px;
+}
+
+.ourwork p.products-proud {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+
+.projects {
+  text-align: left;
+}
+
+.projects div {
+  height: 365px;
+  padding: 40px 0 40px 40px
+}
+
+.projects p {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.projects img.goto {
+  height: 18px;
+}
+
+.projects .oae {
+  background-color: #3B8DC2;
+}
+
+.projects .embdr {
+  background-color: #3C1A69;
+}
+
+.projects .timetable {
+  background-color: #0F525C;
+}
+
+.projects .collabosphere {
+  background-color: #1F5B7F;
+}
+
+.projects a {
+  color: #FFF;
+  font-weight: bold;
+}
+
+
+.team {
+  background-color: #E8ECEB;
+}
+
+.team img {
+  width: 20px;
+  margin: 60px 0px;
+}
+
+.team ul li {
+  color: #B9C4C4;
+  display: inline-block;
+  font-size: 32px;
+  width: 30%;
+}
+
+.team ul li.active:after {
+  content: "";
+  border-width: 0px 15px 15px;
+  border-style: solid;
+  border-color: #FFF transparent;
+  display: block;
+  width: 0;
+  margin: 0 auto;
+}
+
+.team ul li.active a:before {
+  color: #B9C4C4;
+  content: open-quote;
+  display: block;
+  float: left;
+  margin-top: 50px;
+  text-align: right;
+}
+
+.team ul li.active a:after {
+  color: #B9C4C4;
+  content: close-quote;
+  display: block;
+  float: right;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.member {
+  background-color: #FFF;
+}
+
+.member p {
+  color: #8F9092;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 800px;
+  padding: 20px 50px;
+}
+
+.member .name {
+  color: #415E5D;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0 0 60px;
+}
+
+.member ul {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.member ul li {
+  margin: 0 20px;
+}
+
+
+.locations div {
+  padding: 0;
+}
+.locations img {
+  width: 100%;
+}
+
+
+
+
+
+.contactus {
+  background-color: #191F25;
+}
+
+.contactus h3 {
+  color: #81A649;
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+.contactus form {
+  margin-bottom: 80px;
+}
+.contactus input[type="text"], .contactus textarea {
+  color: #000;
+  border: 0;
+  width: 300px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 60px;
+  margin-top: 20px;
+}
+
+.contactus input[name="name"] {
+  background-image: url('../images/icons/name.png');
+}
+
+.contactus input[name="email"] {
+  background-image: url('../images/icons/email.png');
+}
+
+.contactus textarea {
+  background-image: url('../images/icons/message.png');
+  background-size: 50px;
+  height: 200px;
+}
+
+.contactus input[type="button"] {
+  background-color: #2F5828;
+  color: #67905B;
+  margin-top: 40px;
+  width: 300px;
+}
+
+
+.footer {
+  background-color: #121519;
+  background-image: url('../images/bottom-arch.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #717879;
+  font-size: 12px;
+  padding-top: 80px;
+}
+
+.footer img {
+  width: 40px;
+}
+
+.footer p {
+  margin: 20px 0;
+}
