@@ -242,6 +242,10 @@ a:hover {
   width: 30%;
 }
 
+.team ul li.active {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
 .team ul li.active:after {
   border-width: 0px 15px 15px;
   border-style: solid;
@@ -253,21 +257,16 @@ a:hover {
 }
 
 .team ul li.active a:before {
-  color: #B9C4C4;
+  color: #364646;
   content: open-quote;
-  display: block;
-  float: left;
+  margin-right: 5px;
   margin-top: 50px;
-  text-align: right;
 }
 
 .team ul li.active a:after {
-  color: #B9C4C4;
+  color: #364646;
   content: close-quote;
-  display: block;
-  float: right;
   margin-top: 50px;
-  text-align: left;
 }
 
 
