@@ -28,23 +28,20 @@
     font-style: normal;
 }
 
-html,
-body {
-  height: 100%;
+html, body {
   background-color: #191F25;
+  color: #fff;
   font-family: "Clear Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
+  height: 100%;
   line-height: 1.42857143;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-body {
-  color: #fff;
   text-align: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (min-width: 768px) {
-  .row.navigation > div {
+  .navigation > div {
     float: right;
   }
 }
@@ -71,75 +68,89 @@ a:hover {
   text-decoration: none;
 }
 
-.row.navigation ul {
+.navigation ul {
   margin-top: 20px;
   text-align: center;
 }
 
-.row.navigation ul li {
+.navigation ul li {
   margin: 15px;
   padding-bottom: 10px;
 }
 
-.row.navigation ul > li  {
+.navigation ul > li  {
   border-bottom: 5px solid #181E23;
   margin-left: 0;
   padding-left: 0;
 }
 
-.row.navigation ul li:hover {
+.navigation ul li:hover {
   border-bottom: 5px solid #2B3838;
 }
 
-.row.navigation ul li a {
+.navigation ul li a {
   color: #fff;
+  font-size: 18px;
 }
 
-
-
-.row.logo {
-  margin-top: 30px;
-}
-
-.row.logo img {
-  height: 250px;
-}
-
-.row.logo h2, .row.logo p {
+.navigation h1 {
+  margin-top: 20px;
   text-align: left;
 }
 
-.row.logo h2 {
+
+.logo {
+  margin-top: 30px;
+}
+
+.logo > div {
+  text-align: left;
+}
+
+.logo img {
+  height: 250px;
+}
+
+.logo h2, .logo p {
+  text-align: left;
+}
+
+.logo h2 {
   color: #919C9D;
   word-spacing: 2000px;
 }
 
-.row.logo p {
+.logo p {
   color: #879092;
   margin-top: 25px;
 }
 
 @media (min-width: 768px) {
-  .row.logo > div {
+  .logo > div {
     text-align: right;
   }
 
-  .row.navigation ul {
+  .navigation ul {
     text-align: left;
   }
 
-  .row.logo img {
+  .navigation h1 {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .logo img {
     height: 550px;
     margin-right: -120px;
   }
 
-  .row.logo h2 {
+  .logo h2 {
     font-size: 38px;
     margin-top: 215px;
     width: 230px;
   }
 
-  .row.logo p {
+  .logo p {
     width: 300px;
   }
 }
@@ -161,8 +172,8 @@ a:hover {
 }
 
 .ourwork ul {
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 800px;
 }
 
 .ourwork li img {
@@ -232,13 +243,13 @@ a:hover {
 }
 
 .team ul li.active:after {
-  content: "";
   border-width: 0px 15px 15px;
   border-style: solid;
   border-color: #FFF transparent;
+  content: "";
   display: block;
-  width: 0;
   margin: 0 auto;
+  width: 0;
 }
 
 .team ul li.active a:before {
@@ -258,6 +269,8 @@ a:hover {
   margin-top: 50px;
   text-align: left;
 }
+
+
 
 .member {
   background-color: #FFF;
@@ -286,6 +299,7 @@ a:hover {
 .member ul li {
   margin: 0 20px;
 }
+
 
 
 .locations div {
@@ -340,7 +354,7 @@ a:hover {
 
 .contactus input[type="button"] {
   background-color: #2F5828;
-  color: #67905B;
+  color: #FFF;
   margin-top: 40px;
   width: 300px;
 }
