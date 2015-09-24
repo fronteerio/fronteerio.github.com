@@ -269,7 +269,16 @@ a:hover {
   margin-top: 50px;
 }
 
+.team ul li a {
+  background-color: #E8ECEB;
+  padding: 0;
+}
 
+.team ul li a:hover,
+.team ul li a:focus,
+.team ul li a:active {
+  background-color: #E8ECEB;
+}
 
 .member {
   background-color: #FFF;
