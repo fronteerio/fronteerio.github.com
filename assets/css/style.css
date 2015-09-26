@@ -339,15 +339,25 @@ a:hover {
 .contactus form {
   margin-bottom: 80px;
 }
-.contactus input[type="text"], .contactus textarea {
-  color: #000;
-  border: 0;
-  width: 300px;
-  height: 45px;
+
+.form-group {
+  margin-top: 15px;
+}
+
+.form-control {
   background-repeat: no-repeat;
   background-size: contain;
+  border: 0;
+  color: #000;
+  display: inline-block;
+  height: 45px;
+  margin-top: 5px;
   padding-left: 60px;
-  margin-top: 20px;
+  width: 300px;
+}
+
+.has-error .form-control {
+  border: 1px solid #a94442;
 }
 
 .contactus input[name="name"] {
@@ -364,15 +374,25 @@ a:hover {
   height: 200px;
 }
 
-.contactus input[type="button"] {
+.contactus input[type="submit"] {
   background-color: #2F5828;
   color: #FFF;
   margin-top: 40px;
   width: 300px;
 }
 
+.contactus label {
+  display: none;
+}
+
+.contactus .has-error label {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
-  .contactus input[type="text"], .contactus input[type="button"], .contactus textarea {
+  .contactus input[type="text"], .contactus input[type="submit"], .contactus textarea {
     width: 450px;
   }
 }
