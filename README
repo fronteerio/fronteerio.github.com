@@ -1,0 +1,14 @@
+# fronteer.io
+
+This repository holds the static assets that power fronteer.io
+
+## Notes
+
+### Github Pages
+
+Currently fronteer.io is being hosted on github pages as an organisation site. This means that every time you push the master branch the update will be made immediately (give or take ~20 seconds or so for Github to update their caches).
+
+### Contact form
+
+The contact form is powered through [formspree.io](http://formspree.io) and will send mails to info@fronteer.io.
+
