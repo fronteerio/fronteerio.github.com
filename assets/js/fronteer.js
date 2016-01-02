@@ -1,27 +1,15 @@
 $(document).on('ready', function() {
 
+    $('form input, form textarea').on('blur', function() {
+        $('form').removeClass('valid');
+        var isValid = checkContactFormValidation(false);
+        if (isValid) {
+            $('form').addClass('valid');
+        }
+    });
+
     $('form').on('submit', function() {
-        // Clear validation
-        $('.form-group').removeClass('has-error');
-
-        var name = $('input[name="name"]').val();
-        var email = $('input[name="email"]').val();
-        var message = $('textarea').val();
-
-        var isValid = true;
-
-        if (!name) {
-            $('input[name="name"]').parent().addClass('has-error');
-            isValid = false;
-        }
-        if (!email) {
-            $('input[name="email"]').parent().addClass('has-error');
-            isValid = false;
-        }
-        if (!message) {
-            $('textarea').parent().addClass('has-error');
-            isValid = false;
-        }
+        var isValid = checkContactFormValidation(true);
 
         if (isValid) {
             $.ajax({
@@ -45,5 +33,37 @@ $(document).on('ready', function() {
 
         return false;
     });
+
+    function checkContactFormValidation(showErrorMessages) {
+        // Clear validation
+        $('.form-group').removeClass('has-error');
+
+        var name = $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var message = $('textarea').val();
+
+        var isValid = true;
+
+        if (!name) {
+            if (showErrorMessages) {
+                $('input[name="name"]').parent().addClass('has-error');
+            }
+            isValid = false;
+        }
+        if (!email) {
+            if (showErrorMessages) {
+                $('input[name="email"]').parent().addClass('has-error');
+            }
+            isValid = false;
+        }
+        if (!message) {
+            if (showErrorMessages) {
+                $('textarea').parent().addClass('has-error');
+            }
+            isValid = false;
+        }
+
+        return isValid;
+    }
 
 });

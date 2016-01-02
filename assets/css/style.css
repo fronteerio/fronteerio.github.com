@@ -387,6 +387,10 @@ a:hover {
   width: 300px;
 }
 
+.contactus form.valid input[type="submit"] {
+  background-color: #45922A;
+}
+
 .contactus label {
   display: none;
 }
