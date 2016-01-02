@@ -336,7 +336,13 @@ a:hover {
   margin-top: 80px;
 }
 
+.contactus .address {
+  color: #CAD6E5;
+  line-height: 27px;
+}
+
 .contactus form {
+  padding-top: 40px;
   margin-bottom: 80px;
 }
 
@@ -403,6 +409,7 @@ a:hover {
   background-image: url('../images/bottom-arch.png');
   background-position: top;
   background-repeat: no-repeat;
+  background-size: contain;
   color: #717879;
   font-size: 12px;
   padding-top: 80px;
