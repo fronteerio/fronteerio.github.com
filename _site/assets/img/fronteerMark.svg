@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="31px" viewBox="0 0 27 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>fronteerMark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="13.206811%" x2="-13.0340527%" y2="90.0241246%" id="linearGradient-1">
+            <stop stop-color="#B4ED50" offset="0%"></stop>
+            <stop stop-color="#429321" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fronteerMark" sketch:type="MSLayerGroup" transform="translate(0.020381, 0.000000)">
+            <path d="M0,14.7075475 L0,7.62536214 C0,15.1701293 16.9434585,12.3310048 16.9434585,12.331005 L16.9434585,19.3603611 C12.682008,19.8744072 0,21.4247614 0,14.7075475 Z M0,19.0431043 L0,19.1939699 L0,26.2060542 C0,29.9268377 3.89115448,30.7124519 8.08696264,30.9410922 L8.08696436,23.983281 C3.98316196,23.7001645 0,22.7012314 0,19.0431043 Z" id="thermalBack" fill="#2B3838" sketch:type="MSShapeGroup"></path>
+            <path d="M0,19.2699467 L0,26.3521321 C0,20.2935208 18.224145,19.3422898 18.224145,19.3422896 L18.224145,11.9073653 C18.2241456,11.9073653 0,12.5527328 0,19.2699467 Z M0,7.56948498 L0,14.8263315 C0,8.61830259 23.8729426,7.58642246 23.9191904,7.58642225 L26.8966166,3.2489502 L23.9191904,0 C23.8729426,-1.02393477e-08 0,0.686610974 0,7.56948498 Z" id="thermalFront" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1305px" height="62px" viewBox="0 0 1305 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>footer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="footer" sketch:type="MSLayerGroup" fill="#E8ECEB">
+            <path d="M701.826315,53.0045142 L652.808445,0 C652.005026,-1.7627049e-07 471.912466,5.11985057 268,33.1550413 L268,61.6608696 L1036,61.6608696 L1036,53.0045142 L701.826315,53.0045142 Z" id="divider768" sketch:type="MSShapeGroup"></path>
+            <path d="M614.843283,53.0045142 L652.808445,0 C652.005026,-1.7627049e-07 204.158804,33.6256788 0.246337891,61.6608696 L268,61.6608696 L1304.09863,61.6608696 L1304.09863,53.0045128 L614.843283,53.0045142 Z" id="divider768" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
