@@ -23,12 +23,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 768px) {
-  .navigation > div {
-    float: right;
-  }
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -156,6 +150,7 @@ nav #nav-fronteer {
         display: inline-block;
         margin-bottom: 0;
         position: relative;
+        text-align: left;
         top: -70px;
     }
 }
