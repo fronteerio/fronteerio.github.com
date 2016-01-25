@@ -1,17 +1,25 @@
 $(document).on('ready', function() {
 
-    $('form input, form textarea').on('blur', function() {
-        $('form').removeClass('valid');
-        var isValid = checkContactFormValidation(false);
-        if (isValid) {
-            $('form').addClass('valid');
-        }
-    });
+    // Add the current year to the footer
+    $('#footer-year').text(new Date().getFullYear());
 
-    $('form').on('submit', function() {
-        var isValid = checkContactFormValidation(true);
+    /**
+     * Show the form submit success message
+     */
+    var formSubmitted = function() {
+        $('.get-in-touch-contact-component').toggleClass('hide');
+        $('#get-in-touch-contact-success').focus();
+    };
 
-        if (isValid) {
+    /**
+     * Submit the contact form when valid
+     */
+    $('#get-in-touch-form').validator().on('submit', function(e) {
+        if (!e.isDefaultPrevented()) {
+            var name = $.trim($('#get-in-touch-name').val());
+            var email = $.trim($('#get-in-touch-email').val());
+            var message = $.trim($('#get-in-touch-message').val());
+
             $.ajax({
                 'url': 'http://formspree.io/info@fronteer.io',
                 'method': 'POST',
@@ -22,48 +30,12 @@ $(document).on('ready', function() {
                     '_subject': 'Fronteer.io contact form submission from ' + name
                 },
                 'dataType': 'json',
-                success: function(data) {
-                    alert('We have received your message and will be in touch shortly!');
-                },
-                error: function(err) {
-                    alert('Oh no, we couldn\'t send your message, you can always try sending an email to info@fronteer.io');
+                'success': formSubmitted,
+                'error': function(err) {
+                    window.alert('An error has occurred. Please try again later.')
                 }
             });
+            return false;
         }
-
-        return false;
     });
-
-    function checkContactFormValidation(showErrorMessages) {
-        // Clear validation
-        $('.form-group').removeClass('has-error');
-
-        var name = $('input[name="name"]').val();
-        var email = $('input[name="email"]').val();
-        var message = $('textarea').val();
-
-        var isValid = true;
-
-        if (!name) {
-            if (showErrorMessages) {
-                $('input[name="name"]').parent().addClass('has-error');
-            }
-            isValid = false;
-        }
-        if (!email) {
-            if (showErrorMessages) {
-                $('input[name="email"]').parent().addClass('has-error');
-            }
-            isValid = false;
-        }
-        if (!message) {
-            if (showErrorMessages) {
-                $('textarea').parent().addClass('has-error');
-            }
-            isValid = false;
-        }
-
-        return isValid;
-    }
-
 });

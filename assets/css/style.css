@@ -48,8 +48,62 @@ h1 {
 }
 
 address {
-    font-size: 14px;
     line-height: 30px;
+}
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    color: #2B3838;
+    font-size: 16px;
+}
+
+.form-group.has-error .form-control {
+    color: #D0021B;
+}
+
+.form-group.has-error .form-control::-webkit-input-placeholder {
+    color: #D0021B;
+}
+
+.form-group.has-error .form-control:-moz-placeholder {
+    color: #D0021B;
+}
+
+.form-group.has-error .form-control::-moz-placeholder {
+    color: #D0021B;
+}
+
+.form-group.has-error .form-control:-ms-input-placeholder {
+    color: #D0021B;
+}
+
+input.form-control {
+    height: 42px;
+}
+
+textarea.form-control {
+    height: 104px;
+    resize: vertical ;
+}
+
+form .btn {
+    background-color: #429321;
+    border-radius: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    height: 42px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+form .btn:hover {
+    color: #FFF;
+}
+
+form .btn:hover:not(.disabled) {
+    background-color: #2D5923;
 }
 
 /* Navigation */
@@ -228,28 +282,37 @@ nav #nav-fronteer {
 
 @media (min-width: 768px) and (max-width: 1199px) {
     #work #projects > div {
-        height: 520px;
+        height: 515px;
     }
 }
 
 @media (min-width: 1200px) {
     #work #projects > div {
-        height: 450px;
+        height: 445px;
     }
 }
 
 #work #projects img {
-    height: 90px;
+    height: 75px;
     margin-bottom: 40px;
 }
 
-#work #projects img.project-logo-small {
-    margin-top: 30px;
+#work #projects img.project-logo-medium {
+    margin-top: 15px;
     height: 60px;
+}
+
+#work #projects img.project-logo-small {
+    margin-top: 25px;
+    height: 50px;
 }
 
 #work #projects #ally {
     background-color: #00C7D0;
+}
+
+#work #projects #cumulus {
+    background-color: #6EAAD8;
 }
 
 #work #projects #embdr {
@@ -286,90 +349,52 @@ nav #nav-fronteer {
     margin-bottom: 50px;
 }
 
-
-
-
-
-.contactus {
-  background-color: #191F25;
+#get-in-touch #get-in-touch-form-container {
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
-.contactus h3 {
-  color: #81A649;
-  font-size: 28px;
-  margin-bottom: 40px;
-  margin-top: 80px;
+#get-in-touch form {
+    margin: 0 auto;
+    max-width: 450px;
 }
 
-.contactus .address {
-  color: #CAD6E5;
-  line-height: 27px;
+#get-in-touch form .form-control {
+    background-repeat: no-repeat;
+    background-size: auto 43px;
+    padding-left: 60px;
 }
 
-.contactus form {
-  padding-top: 40px;
-  margin-bottom: 80px;
+#get-in-touch form #get-in-touch-name {
+    background-image: url('../img/icons/name.png');
 }
 
-.form-group {
-  margin-top: 15px;
+#get-in-touch form .form-group.has-error #get-in-touch-name {
+    background-image: url('../img/icons/name-error.png');
 }
 
-.form-control {
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 0;
-  color: #000;
-  display: inline-block;
-  height: 45px;
-  margin-top: 5px;
-  padding-left: 60px;
-  width: 300px;
+#get-in-touch form #get-in-touch-email {
+    background-image: url('../img/icons/email.png');
 }
 
-.has-error .form-control {
-  border: 1px solid #a94442;
+#get-in-touch form .form-group.has-error #get-in-touch-email {
+    background-image: url('../img/icons/email-error.png');
 }
 
-.contactus input[name="name"] {
-  background-image: url('../images/icons/name.png');
+#get-in-touch form #get-in-touch-message {
+    background-image: url('../img/icons/message.png');
+    padding-top: 10px;
 }
 
-.contactus input[name="email"] {
-  background-image: url('../images/icons/email.png');
+#get-in-touch form .form-group.has-error #get-in-touch-message {
+    background-image: url('../img/icons/message-error.png');
 }
 
-.contactus textarea {
-  background-image: url('../images/icons/message.png');
-  background-size: 50px;
-  height: 200px;
-}
-
-.contactus input[type="submit"] {
-  background-color: #2F5828;
-  color: #FFF;
-  margin-top: 40px;
-  width: 300px;
-}
-
-.contactus form.valid input[type="submit"] {
-  background-color: #45922A;
-}
-
-.contactus label {
-  display: none;
-}
-
-.contactus .has-error label {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .contactus input[type="text"], .contactus input[type="submit"], .contactus textarea {
-    width: 450px;
-  }
+#get-in-touch form .btn span {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url('../img/icons/send.png');
+    padding-left: 35px;
 }
 
 /* Footer */
