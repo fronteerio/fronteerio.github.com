@@ -91,13 +91,18 @@ nav #nav-fronteer {
 
 @media (min-width: 768px) {
     nav {
+        text-align: left;
+    }
+
+    nav ul {
         text-align: right;
     }
 
     nav #nav-fronteer {
+        display: inline-block;
         margin-bottom: 0;
         position: relative;
-        top: -60px;
+        top: -70px;
     }
 }
 
