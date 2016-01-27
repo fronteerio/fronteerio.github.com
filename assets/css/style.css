@@ -1,14 +1,14 @@
 /* Core */
 
 @font-face {
-    font-family: 'Clear Sans Thin';
-    src: url('../fonts/clearsans-thin.woff') format('woff');
+    font-family: 'Clear Sans';
+    src: url('../fonts/clearsans-light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Clear Sans Thin';
+    font-family: 'Clear Sans';
     src: url('../fonts/clearsans-bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
@@ -16,7 +16,7 @@
 
 body {
   background-color: #191F25;
-  font-family: "Clear Sans Thin", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Clear Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
   text-rendering: optimizeLegibility;
