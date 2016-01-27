@@ -126,15 +126,7 @@ nav ul li a:hover {
     padding-top: 10px;
 }
 
-nav ul li.nav-who-we-are a:hover {
-    border-top-color: #3A4A26;
-}
-
-nav ul li.nav-our-work a:hover {
-    border-top-color: #628035;
-}
-
-nav ul li.nav-get-in-touch a:hover {
+nav ul li a:hover {
     border-top-color: #B4EC51;
 }
 
