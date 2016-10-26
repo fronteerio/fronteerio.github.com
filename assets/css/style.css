@@ -105,6 +105,20 @@ form .btn:hover:not(.disabled) {
     background-color: #2D5923;
 }
 
+.icon-link {
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    background-size: 14px auto;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+.icon-link:hover {
+    text-decoration: underline;
+}
+
 /* Navigation */
 
 #top {
@@ -157,10 +171,14 @@ form .btn:hover:not(.disabled) {
     background-image: url('../img/work-arch-small.svg');
     background-position: top;
     background-repeat: no-repeat;
-    color: #262626;
     font-size: 18px;
     margin-top: 45px;
     padding-top: 60px;
+}
+
+#fronteer-blackboard-container,
+#fronteer-blackboard-container .icon-link {
+    color: #262626;
 }
 
 @media (min-width: 1200px) {
@@ -171,12 +189,13 @@ form .btn:hover:not(.disabled) {
 
 #fronteer-blackboard {
     background-color: #E8ECEB;
-    padding: 10px 35px 0;
+    padding: 10px 35px 40px;
 }
 
 #fronteer-blackboard h2 {
     font-weight: 300;
     line-height: 40px;
+    margin-bottom: 35px;
 }
 
 #fronteer-blackboard figure {
@@ -189,7 +208,6 @@ form .btn:hover:not(.disabled) {
     margin-right: 6px;
 }
 
-
 #fronteer-blackboard #fronteer-blackboard-blackboard {
     margin-left: 5px;
     margin-right: 3px;
@@ -197,7 +215,12 @@ form .btn:hover:not(.disabled) {
 
 #fronteer-blackboard p {
     max-width: 700px;
-    margin: 35px auto 50px;
+    margin: 0 auto;
+}
+
+#fronteer-blackboard .icon-link {
+    background-image: url('../img/outside-link.png');
+    background-position: 0 7px;
 }
 
 /* Ally */
@@ -207,7 +230,7 @@ form .btn:hover:not(.disabled) {
 }
 
 #ally,
-#ally a {
+#ally .icon-link {
     color: #DFECEA;
 }
 
@@ -220,19 +243,8 @@ form .btn:hover:not(.disabled) {
     margin: 0 auto;
 }
 
-#ally a {
+#ally .icon-link {
     background-image: url('../img/goto-light.png');
-    background-position: 0 4px;
-    background-repeat: no-repeat;
-    background-size: 14px auto;
-    display: inline-block;
-    font-weight: bold;
-    margin-top: 30px;
-    padding-left: 25px;
-}
-
-#ally a:hover {
-    text-decoration: underline;
 }
 
 /* Footer */
