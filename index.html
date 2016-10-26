@@ -18,168 +18,54 @@
 
     <div class="container-fluid">
         <div id="top">
-            <!-- NAVIGATION -->
-            <nav>
-                <ul>
-                    <li><a href="#who-we-are">Who we are</a></li>
-                    <li><a href="#our-work">Our work</a></li>
-                    <li><a href="#get-in-touch">Get in touch</a></li>
-                </ul>
-                <figure id="nav-fronteer">
-                    <img src="assets/img/fronteer.png" alt="Fronteer" height="16"/>
-                </figure>
-            </nav>
+            <!-- HEADER -->
+            <h1 class="sr-only">Fronteer</h1>
+            <figure id="nav-fronteer" aria-hidden="true">
+                <img src="assets/img/fronteer.png" alt="" title="Fronteer" height="16"/>
+            </figure>
 
             <!-- WHO WE ARE -->
             <section id="who-we-are-container" class="row text-left">
                 <div class="col-xs-12 col-sm-6">
-                    <figure>
+                    <figure aria-hidden="true">
                         <img src="assets/img/logo.svg" alt="" title="Fronteer" />
                     </figure>
                 </div>
                 <div id="who-we-are" class="col-xs-12 col-sm-6">
-                    <h1>Crafting awesome experiences</h1>
-                    <p>Fronteer is a blend of product designers, software engineers and entrepreneurs. We conceptualize, design, build and provide useful and uplifting educational technology products and services. We also provide consulting services to primarily higher education institutions but have experience in all sectors.</p>
-                    <p>Fronteer's foundations consist of a talented and renowned team of experts that combine high quality user-centred design with modern, multi-tenant and highly scalable architectures.</p>
-                    <p>Don't hesitate to get in touch so we can explore together which new exciting services we can bring to life. </p>
+                    <h2>Crafting awesome experiences</h2>
+                    <p>Fronteer is a blend of product designers, software engineers and entrepreneurs. We conceptualize, design, build and provide useful and uplifting educational technology products and services.</p>
                 </div>
             </section>
         </div>
 
-        <!-- OUR WORK -->
-        <section id="work" class="row">
-            <div id="our-work" class="clearfix">
-                <h1>Our work</h1>
-                <p>We've had the opportunity to work closely with some really amazing people and organizations.</p>
-                <ul>
-                    <li>
-                        <span class="sr-only">Georgia Institute of Technology</span>
-                        <figure>
-                            <img src="assets/img/clients/gatech.png" alt="" title="Georgia Institute of Technology" width="185" />
+        <!-- FRONTEER AND BLACKBOARD -->
+        <section id="fronteer-blackboard-container" class="row">
+            <div id="fronteer-blackboard" class="clearfix">
+                <h2>
+                    <div class="sr-only">Fronteer joins the Blackboard family</div>
+                    <div aria-hidden="true">
+                        <figure id="fronteer-blackboard-fronteer">
+                            <img src="assets/img/fronteer-dark.png" alt="" title="Fronteer" width="203" />
                         </figure>
-                    </li>
-                    <li>
-                        <span class="sr-only">University of Cambridge</span>
-                        <figure>
-                            <img src="assets/img/clients/cambridge.png" alt="" title="University of Cambridge" width="155" />
+                        joins the
+                        <figure id="fronteer-blackboard-blackboard">
+                            <img src="assets/img/blackboard.png" alt="" title="Blackboard" width="190" />
                         </figure>
-                    </li>
-                    <li>
-                        <span class="sr-only">University of California, Berkeley</span>
-                        <figure>
-                            <img src="assets/img/clients/berkeley.png" alt="" title="University of California, Berkeley" width="130" />
-                        </figure>
-                    </li>
-                    <li>
-                        <span class="sr-only">*Research</span>
-                        <figure>
-                            <img src="assets/img/clients/research.png" alt="" title="*Research" width="88" />
-                        </figure>
-                    </li>
-                    <li>
-                        <span class="sr-only">Apereo Foundation</span>
-                        <figure>
-                            <img src="assets/img/clients/apereo.png" alt="" title="Apereo Foundation" width="90" />
-                        </figure>
-                    </li>
-                    <li>
-                        <span class="sr-only">ConstelCom</span>
-                        <figure>
-                            <img src="assets/img/clients/constelcom.png" alt="" title="ConstelCom" width="113" />
-                        </figure>
-                    </li>
-                    <li>
-                        <span class="sr-only">Dixons Retail</span>
-                        <figure>
-                            <img src="assets/img/clients/dixons.png" alt="" title="Dixons Retail" width="183" />
-                        </figure>
-                    </li>
-                </ul>
-
-                <!-- PROJECTS -->
-                <p id="projects-intro">We're very proud of the products we've made too.</p>
-                <div id="projects">
-                    <div id="ally" class="col-xs-12 col-sm-6 col-md-4">
-                        <h2 class="sr-only">Ally</h2>
-                        <figure>
-                            <img src="assets/img/products/ally.png" class="project-logo-small" alt="" title="Ally" />
-                        </figure>
-                        <p>Ally is a revolutionary course content accessibility service that integrates closely with the Learning Management System. Driven by machine learning, it brings immediate benefits to students and instructors and helps institutions reach their accessibility goals.</p>
-                        <a href="http://www.ally.ac" target="_blank">ally.ac</a>
+                        family
                     </div>
-                    <div id="cumulus" class="col-xs-12 col-sm-6 col-md-4 project-dark">
-                        <h2 class="sr-only">Cumulus LRS</h2>
-                        <figure>
-                            <img src="assets/img/products/cumulus.png" class="project-logo-small" alt="" title="Cumulus LRS" />
-                        </figure>
-                        <p>Cumulus LRS is a student-centred, hyper-efficient, multi-tenant and almost infinitely scalable Amazon Web Services-based Learning Record Store. Compatible with both the xAPI and IMS Caliper specifications, it provides flexible data access and delivers a range of unique student privacy features.</p>
-                    </div>
-                    <div id="embdr" class="col-xs-12 col-sm-6 col-md-4">
-                        <h2 class="sr-only">Embdr</h2>
-                        <figure>
-                            <img src="assets/img/products/embdr.png" class="project-logo-small" alt="" title="Embdr" />
-                        </figure>
-                        <p>Embdr is a powerful and easy-to-integrate REST-API-as-a-Service that can enhance your app with thumbnailing, high fidelity in-browser previews, metadata extraction and extraordinary content analytics for almost any type of content.</p>
-                    </div>
-                    <div id="oae" class="col-xs-12 col-sm-6 col-md-4">
-                        <h2 class="sr-only">Open Academic Environment</h2>
-                        <figure>
-                            <img src="assets/img/products/oae.png" class="project-logo-medium" alt="" title="Open Academic Environment" />
-                        </figure>
-                        <p>The Apereo Open Academic Environment is an award-winning, multi-tenant and highly scalable platform for academic collaboration and networking. Recognized for its outstanding User Experience, it is in use at 100s of institutions around the world. </p>
-                        <a href="http://www.oaeproject.org" target="_blank">oaeproject.org</a>
-                    </div>
-                    <div id="timetable" class="col-xs-12 col-sm-6 col-md-4">
-                        <h2 class="sr-only">Timetable</h2>
-                        <figure>
-                            <img src="assets/img/products/timetable.png" alt="" title="Timetable" />
-                        </figure>
-                        <p>Our multi-tenant Timetable system used by the University of Cambridge with a fast and efficient administrator experience and renowned as a student favourite, allowing them to easily assemble their personal timetable.</p>
-                        <a href="http://timetable.cam.ac.uk" target="_blank">timetable.cam.ac.uk</a>
-                    </div>
-                    <div id="collabosphere" class="col-xs-12 col-sm-6 col-md-4">
-                        <h2 class="sr-only">Collabosphere</h2>
-                        <figure>
-                            <img src="assets/img/products/collabosphere.png" alt="" title="Collabosphere" />
-                        </figure>
-                        <p>Remixed content meets learning analytics meets gamification in Collabosphere, a suite of LTI tools designed to increase student engagement and offer new pedagogical opportunities, including an Asset Library, collaborative whiteboards and a student engagement leaderboard.</p>
-                    </div>
-                </div>
+                </h2>
+                <p>We are excited to announce that Fronteer has joined forces with Blackboard, a leader in Educational Technology. Through our shared vision around accessibility and our Ally product, we are entering a new phase to make the impact we’ve always aspired to achieve.</p>
             </div>
         </section>
 
-        <!-- GET IN TOUCH -->
-        <section id="get-in-touch" class="row">
-            <h1>Visit us</h1>
-            <address>
-                3 Laundress Lane<br />
-                ideaSpace City<br />
-                CB2 1SB Cambridge<br />
-                United Kingdom
-            </address>
-
-            <h1 class="get-in-touch-contact-component">Contact us</h1>
-            <h1 id="get-in-touch-contact-success" class="hide get-in-touch-contact-component" tabindex="0">Thank you for your message</h1>
-            <div id="get-in-touch-form-container">
-                <form id="get-in-touch-form" class="get-in-touch-contact-component" role="form">
-                    <div class="form-group">
-                        <label class="sr-only" for="get-in-touch-name">Name:</label>
-                        <input type="text" id="get-in-touch-name" name="name" placeholder="Your name" class="form-control" required />
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" for="get-in-touch-email">Email:</label>
-                        <input type="email" id="get-in-touch-email" name="email" placeholder="Your email address" class="form-control" required />
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" for="get-in-touch-message">Message:</label>
-                        <textarea name="message" id="get-in-touch-message" placeholder="Your message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">
-                        <span>Send message</span>
-                    </button>
-                </form>
-                <div class="hide get-in-touch-contact-component">We'll be in touch shortly</h1>
-            </div>
+        <!-- ALLY -->
+        <section id="ally" class="row">
+            <h2 class="sr-only">Ally</h2>
+            <figure aria-hidden="true">
+                <img src="assets/img/products/ally.png" alt="" title="Ally" width="175" />
+            </figure>
+            <p>Ally is a revolutionary course content accessibility service that integrates closely with the Learning Management System. Ally is designed to help institutions gain greater insight into the accessibility of their digital course content; to provide guidance to teachers about how to improve the accessibility and quality of their content; and to provide students of all abilities with immediate access to content in formats that may be more suited to their specific needs.</p>
+            <a href="http://www.ally.ac" target="_blank">ally.ac</a>
         </section>
 
         <!-- FOOTER -->

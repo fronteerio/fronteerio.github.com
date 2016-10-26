@@ -112,44 +112,8 @@ form .btn:hover:not(.disabled) {
     margin: 0 auto;
 }
 
-nav ul li + li {
-    margin-left: 20px;
-}
-
-nav ul li a,
-nav ul li a:hover {
-    border-bottom: 5px solid #2B3838;
-    border-top: 15px solid transparent;
-    color: #FFF;
-    display: inline-block;
-    padding-bottom: 15px;
-    padding-top: 10px;
-}
-
-nav ul li a:hover {
-    border-top-color: #B4EC51;
-}
-
-nav #nav-fronteer {
+#top #nav-fronteer {
     margin: 25px 0 40px;
-}
-
-@media (min-width: 768px) {
-    nav {
-        text-align: left;
-    }
-
-    nav ul {
-        text-align: right;
-    }
-
-    nav #nav-fronteer {
-        display: inline-block;
-        margin-bottom: 0;
-        position: relative;
-        text-align: left;
-        top: -70px;
-    }
 }
 
 /* Who we are */
@@ -171,11 +135,11 @@ nav #nav-fronteer {
     }
 
     #who-we-are {
-        padding-top: 150px;
+        padding-top: 160px;
     }
 }
 
-#who-we-are-container h1 {
+#who-we-are-container h2 {
     color: #DFECEA;
     font-size: 36px;
     margin-bottom: 35px;
@@ -187,206 +151,88 @@ nav #nav-fronteer {
     margin-bottom: 30px;
 }
 
-/* Work */
+/* Fronteer and Blackboard */
 
-#work {
+#fronteer-blackboard-container {
     background-image: url('../img/work-arch-small.svg');
     background-position: top;
     background-repeat: no-repeat;
-    color: #4E6767;
+    color: #262626;
     font-size: 18px;
     margin-top: 45px;
     padding-top: 60px;
 }
 
 @media (min-width: 1200px) {
-    #work {
+    #fronteer-blackboard-container {
         background-image: url('../img/work-arch-large.svg');
     }
 }
 
-#work #our-work {
+#fronteer-blackboard {
     background-color: #E8ECEB;
-    padding: 0 35px;
+    padding: 10px 35px 0;
 }
 
-#work ul {
-    margin: 30px auto 45px;
+#fronteer-blackboard h2 {
+    font-weight: 300;
+    line-height: 40px;
+}
+
+#fronteer-blackboard figure {
+    display: inline;
+    position: relative;
+    top: -5px;
+}
+
+#fronteer-blackboard #fronteer-blackboard-fronteer {
+    margin-right: 6px;
+}
+
+
+#fronteer-blackboard #fronteer-blackboard-blackboard {
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+#fronteer-blackboard p {
     max-width: 700px;
+    margin: 35px auto 50px;
 }
 
-#work ul li {
-    padding: 30px 45px;
+/* Ally */
+
+#ally {
+    padding: 50px 25px;
 }
 
-@media (max-width: 767px) {
-    #work ul li {
-        display: block;
-        padding-left: 0;
-        padding-right: 0;
-    }
+#ally,
+#ally a {
+    color: #DFECEA;
 }
 
-/* Projects */
-
-#work #projects-intro {
-    margin-bottom: 45px;
+#ally figure {
+    margin-bottom: 40px;
 }
 
-#work h1 {
-    margin-bottom: 30px;
-    margin-top: 30px;
+#ally p {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-#work #projects {
-    margin: 0 -35px;
-    text-align: left;
-}
-
-#work #projects ,
-#work #projects a {
-    color: #FFF;
-}
-
-#work #projects .project-dark,
-#work #projects .project-dark a {
-    color: #222;
-}
-
-#work #projects a {
+#ally a {
     background-image: url('../img/goto-light.png');
-    background-position: 0 5px;
+    background-position: 0 4px;
     background-repeat: no-repeat;
     background-size: 14px auto;
     display: inline-block;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 30px;
     padding-left: 25px;
 }
 
-#work #projects .project-dark a {
-    background-image: url('../img/goto-dark.png');
-}
-
-#work #projects > div {
-    padding: 50px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    #work #projects > div {
-        height: 515px;
-    }
-}
-
-@media (min-width: 1200px) {
-    #work #projects > div {
-        height: 445px;
-    }
-}
-
-#work #projects img {
-    height: 75px;
-    margin-bottom: 40px;
-}
-
-#work #projects img.project-logo-medium {
-    margin-top: 15px;
-    height: 60px;
-}
-
-#work #projects img.project-logo-small {
-    margin-top: 25px;
-    height: 50px;
-}
-
-#work #projects #ally {
-    background-color: #121519;
-}
-
-#work #projects #cumulus {
-    background-color: #6EAAD8;
-}
-
-#work #projects #embdr {
-    background-color: #3C156B;
-}
-
-#work #projects #oae {
-    background-color: #368CC4;
-}
-
-#work #projects #timetable {
-    background-color: #08525D;
-}
-
-#work #projects #collabosphere {
-    background-color: #1B5A81;
-}
-
-/* Get in touch */
-
-#get-in-touch {
-    color: #DFECEA;
-    padding: 30px 25px 40px;
-}
-
-#get-in-touch h1 {
-    color: #B4EC51;
-    font-size: 26px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-}
-
-#get-in-touch address {
-    margin-bottom: 50px;
-}
-
-#get-in-touch #get-in-touch-form-container {
-    padding-bottom: 30px;
-    padding-top: 10px;
-}
-
-#get-in-touch form {
-    margin: 0 auto;
-    max-width: 450px;
-}
-
-#get-in-touch form .form-control {
-    background-repeat: no-repeat;
-    background-size: auto 43px;
-    padding-left: 60px;
-}
-
-#get-in-touch form #get-in-touch-name {
-    background-image: url('../img/icons/name.png');
-}
-
-#get-in-touch form .form-group.has-error #get-in-touch-name {
-    background-image: url('../img/icons/name-error.png');
-}
-
-#get-in-touch form #get-in-touch-email {
-    background-image: url('../img/icons/email.png');
-}
-
-#get-in-touch form .form-group.has-error #get-in-touch-email {
-    background-image: url('../img/icons/email-error.png');
-}
-
-#get-in-touch form #get-in-touch-message {
-    background-image: url('../img/icons/message.png');
-    padding-top: 10px;
-}
-
-#get-in-touch form .form-group.has-error #get-in-touch-message {
-    background-image: url('../img/icons/message-error.png');
-}
-
-#get-in-touch form .btn span {
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-image: url('../img/icons/send.png');
-    padding-left: 35px;
+#ally a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
